@@ -3,3 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-affiliate{
+  background-color: #f3f5f9;
+  padding: 50px 0;
+}
+
+.affiliate{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.affiliate h4{
+  color: #5b6987;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.affiliate div{
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 450px){
+  .affiliate img{
+    flex-basis: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 451px){
+  .affiliate img{
+    flex-basis: calc( 100% / 2 );
+  }
+}
+
+@media screen and (min-width: 681px){
+  .affiliate img{
+    flex-basis: calc( 100% / 3 );
+  }
+}
+
+@media screen and (min-width: 991px){
+  .affiliate img{
+    flex-basis: calc( 100% / 6 );
+  }
+
+  .affiliate div{
+    flex-wrap: nowrap;
+  }
+}
+
+.affiliate a{
+  color: #006aff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
