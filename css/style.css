@@ -107,20 +107,12 @@ body{
   display: flex;
 }
 
-.deploy-scale-bottom ul{
-  flex-basis: 40%;
-  margin-left: 50px;
-  margin-top: 30px;
-  padding: 0 100px;
-}
-
 .four-box{
   display: flex;
   flex-wrap: wrap;
 }
 
 .box{
-  flex-basis: 50%;
   margin-top: 30px;
   padding-right: 100px;
 }
@@ -132,6 +124,7 @@ body{
 @media screen and (max-width: 768px){
   .deploy-scale-bottom ul{
     display: flex;
+    margin: auto;
   }
 
   .deploy-scale li{
@@ -148,6 +141,26 @@ body{
   }
 }
 
-@media screen and (min-width: 991px){
+@media screen and (max-width: 400px){
+  .deploy-scale-bottom ul{
+    flex-direction: column;
+  }
 
+  .deploy-scale li{
+    border-left: 2px solid #e5e8ed;
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .deploy-scale-bottom ul{
+    flex-basis: 40%;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 0 100px;
+  }
+
+  .box{
+    flex-basis: 50%;
+  }
 }
